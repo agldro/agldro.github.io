@@ -85,6 +85,15 @@ mix-blend-mode: difference;
 .wrapper{
   width: 30vw !important;
 }
+
+      .projects-top {
+    height: 50vh !important;
+  }
+
+  .projects-bottom{
+    height: 50vh !important;
+  }
+
 }
 
 body .cursor__ball circle {
