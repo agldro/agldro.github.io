@@ -102,6 +102,14 @@ mix-blend-mode: difference;
     min-width: 75% !important;
   }
 
+      .projects-top {
+    height: 50vh !important;
+  }
+
+  .projects-bottom{
+    height: 50vh !important;
+  }
+
 }
 
 body .cursor__ball circle {
