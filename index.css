@@ -47,22 +47,110 @@ mix-blend-mode: difference;
     font-size: 2vmin !important; 
 }
 
-  #ol {
-    width: 63vw !important;
-  }
-
-  #time {
-    width: 63vw !important;
-  }
-
   #type, #date {
     font-size: 1.7vmin !important; 
+}
+
+.projects-top {
+  height: 50vh !important;
+}
+
+.projects-bottom{
+  height: 50vh !important;
+}
+
+#glossary{
+  min-width: 73% !important;
+}
+
+#magazine{
+  min-width: 95% !important;
+}
+
+#mturk{
+  min-width: 45% !important;
+}
+
+#spatial{
+  min-width: 83% !important;
+}
+
+#ol {
+  min-width: 58% !important;
+}
+
+#time {
+  min-width: 46% !important;
+}
+
+#water{
+  min-width: 38% !important;
+}
+
+#dama{
+  min-width: 80% !important;
+}
+
+#ongoing{
+  min-width: 80% !important;
+}
+
+#coloringbook{
+  min-width: 70% !important;
+}
+
+#punctuation{
+  min-width: 90% !important;
 }
 }
 
 body .cursor__ball circle {
 fill: white;
 }
+
+#glossary{
+  min-width: 28%;
+}
+
+#magazine{
+  min-width: 38%;
+}
+
+#mturk{
+  min-width: 18%;
+}
+
+#spatial{
+  min-width: 32%;
+}
+
+#ol {
+  min-width: 20%;
+}
+
+#time {
+  min-width: 16%;
+}
+
+#water{
+  min-width: 14%;
+}
+
+#dama{
+  min-width: 28%;
+}
+
+#ongoing{
+  min-width: 30%;
+}
+#coloringbook{
+  min-width: 25%;
+}
+
+#punctuation{
+  min-width: 30%;
+}
+
 
 h1{
   font-family: 'Grotesk';
@@ -85,7 +173,7 @@ h1{
 }
 
 .wrapper{
-  width: auto;
+  width: 100%;
   height: auto;
   position: relative;
 }
@@ -136,6 +224,11 @@ h1{
   z-index: 999;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .item-top {
   padding: 20px;
   padding-top: 100%;
@@ -161,6 +254,7 @@ h1{
   column-gap: 1px;
   overflow-x: auto;
   position: relative;
+  overflow-y: hidden;
 }
 .projects-bottom {
   padding: 0;
@@ -173,6 +267,7 @@ h1{
   height: 45vh;
   column-gap: 1px;
   overflow-x: auto;
+  position: relative;
   overflow-y: hidden;
 }
 
