@@ -1,0 +1,277 @@
+@font-face {
+    font-family: "Grotesk";
+    src: url("https://cdn.glitch.global/a0135ad0-4092-4324-a09e-d318ebf16060/Soyuz%20Grotesk%20Bold.otf?v=1690543335737");
+}
+
+   @font-face {
+    font-family: "Inter";
+    src: url("https://cdn.glitch.global/a0135ad0-4092-4324-a09e-d318ebf16060/Inter.ttf?v=1692122620818");
+}
+
+html {
+background-color: white;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body .cursor {
+pointer-events: none;
+}
+
+body .cursor__ball {
+position: fixed;
+top: 0;
+left: 0;
+z-index: 1000;
+}
+
+body .cursor {
+mix-blend-mode: difference;
+}
+
+@media (max-width: 450px) {
+  .cursor__ball {
+    visibility: hidden;
+  }
+  #description {
+    width: 65vw !important;
+    font-size: 2.8vmin !important;
+  }
+
+  #colophon {
+    width: 30vw !important;
+    font-size: 2.6vmin !important;
+  }
+
+  #type, #date {
+    font-size: 1.9vmin !important; 
+
+}
+
+#t1{
+  min-width: 90% !important;
+}
+
+#t2{
+  min-width: 58% !important;
+}
+
+#t3{
+  min-width: 50% !important;
+}
+
+#t4{
+  min-width: 90% !important;
+}
+
+#t5{
+  min-width: 70% !important;
+}
+
+#t6{
+  min-width: 55% !important;
+}
+
+#b1{
+  min-width: 80% !important;
+}
+
+#b3{
+  min-width: 80% !important;
+}
+
+#b4{
+  min-width: 90% !important;
+}
+
+#b5{
+  min-width: 72% !important;
+}
+
+.projects-top {
+  height: 50vh !important;
+}
+
+.projects-bottom{
+  height: 50vh !important;
+}
+
+
+}
+
+body .cursor__ball circle {
+fill: white;
+}
+
+#t1{
+  min-width: 32%;
+}
+
+#t2{
+  min-width: 23%;
+}
+
+#t3{
+  min-width: 20%;
+}
+
+#t4{
+  min-width: 38%;
+}
+
+#t5{
+  min-width: 25%;
+}
+
+#t6{
+  min-width: 22%;
+}
+
+#b1{
+  min-width: 33%;
+}
+
+#b3{
+  min-width: 31%;
+}
+
+#b4{
+  min-width: 33%;
+}
+
+#b5{
+  min-width: 25%;
+}
+
+h1{
+  font-family: 'Grotesk';
+  font-size: 4vh;
+  line-height: 92%;
+  margin: 0;
+  z-index: 999;
+  color: black;
+}
+
+.wrapper{
+  width: auto;
+  height: auto;
+  position: relative;
+  margin-bottom: 3vh;
+  margin-top: 2vh;
+}
+
+#type{
+  font-family: "Inter";
+  text-align: left;
+  font-size: 1.3vmin;
+  margin: 0;
+  position: absolute;
+  color: grey;
+}
+
+#date{
+  font-family: "Inter";
+  text-align: right;
+  right: 0;
+  margin: 0;
+  font-size: 1.3vmin;
+  position: absolute;
+  color: grey;
+}
+
+#description{
+    padding: 0;
+    margin:0;
+    width: 22vw;
+    font-family: "Inter";
+    position: relative;
+    color: black;
+    font-size: 1.6vmin;
+}
+
+#colophon{
+  padding: 0;
+  margin:0;
+  width: 12vw;
+  font-family: "Inter";
+  position: relative;
+  color: black;
+  font-size: 1.6vmin;
+}
+
+#back{
+  position: fixed;
+  font-family: 'Inter';
+  font-size: 2vh;
+  font-weight: 250;
+  text-decoration: none;
+  top: 2vh;
+  right: 3vw;
+  color: white;
+  mix-blend-mode: difference;
+  z-index: 999;
+}
+
+.ontop{
+  margin-bottom: -5%;
+  z-index: 999;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.item-top {
+  padding: 20px;
+  padding-top: 100%;
+  outline: solid 1px rgb(222, 222, 222);
+  border-bottom: 1px solid rgb(222, 222, 222);
+}
+
+.item-bottom {
+  padding: 20px;
+  padding-bottom: 100%;
+  outline: solid 1px rgb(222, 222, 222);
+}
+
+.projects-top {
+  padding: 0;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 55vh;
+  column-gap: 1px;
+  overflow-x: auto;
+  position: relative;
+}
+.projects-bottom {
+  padding: 0;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 45vh;
+  column-gap: 1px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.projects-top::-webkit-scrollbar {
+  display: none;
+}
+
+.projects-bottom::-webkit-scrollbar {
+  display: none;
+}
+
