@@ -38,20 +38,6 @@ mix-blend-mode: difference;
   .cursor__ball {
     visibility: hidden;
   }
-  
-  #description {
-    width: 42vw !important;
-    font-size: 2.2vmin !important;
-  }
-
-  #colophon {
-    width: 35vw !important;
-    font-size: 2.1vmin !important;
-  }
-
-  #type, #date {
-    font-size: 1.7vmin !important; 
-}
 
 #description {
   width: 55vw !important;
