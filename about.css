@@ -1,0 +1,164 @@
+@font-face {
+    font-family: "Grotesk";
+    src: url("https://cdn.glitch.global/a0135ad0-4092-4324-a09e-d318ebf16060/Soyuz%20Grotesk%20Bold.otf?v=1690543335737");
+}
+
+   @font-face {
+    font-family: "Inter";
+    src: url("https://cdn.glitch.global/a0135ad0-4092-4324-a09e-d318ebf16060/Inter.ttf?v=1692122620818");
+}
+
+html {
+background-color: white;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body .cursor {
+pointer-events: none;
+}
+
+body .cursor__ball {
+position: fixed;
+top: 0;
+left: 0;
+z-index: 1000;
+}
+
+body .cursor {
+mix-blend-mode: difference;
+}
+
+@media (max-width: 450px) {
+  .cursor__ball {
+    visibility: hidden;
+  }
+
+  h1{
+    width: 40vw !important;
+  }
+
+  #colophon{
+    font-size: 3.1vmin !important;
+    width: 50vw !important;
+  }
+
+  .projects-top {
+    height: 60vh !important;
+    }
+    
+    .projects-bottom{
+    height: 40vh !important;
+    }
+
+    p{
+      min-width: 70vw !important;
+    }
+
+    #top{
+      width: 20vw;
+    }
+}
+
+body .cursor__ball circle {
+fill: white;
+}
+
+h1{
+  font-family: 'Grotesk';
+  width: 15vw;
+  font-size: 4vh;
+  line-height: 98%;
+  margin: 0;
+  z-index: 999;
+  color: black;
+}
+
+#colophon{
+  padding: 0;
+  margin:0;
+  min-width: 40vw;
+  font-family: 'Inter';
+  position: relative;
+  color: black;
+  font-size: 1.9vmin;
+}
+
+p{
+  font-family: 'Inter';
+  font-size: 2vh;
+  font-weight: 250;
+  min-width: 20vw;
+}
+
+#top{
+  width: 20vw;
+}
+
+#back{
+  position: fixed;
+  font-family: 'Inter';
+  font-size: 2vh;
+  font-weight: 250;
+  text-decoration: none;
+  top: 2vh;
+  right: 3vw;
+  color: white;
+  mix-blend-mode: difference;
+  z-index: 999;
+}
+
+.item-top {
+  padding: 20px;
+  padding-top: 120%;
+  outline: solid 1px rgb(222, 222, 222);
+  border-bottom: 1px solid rgb(222, 222, 222);
+}
+
+.item-bottom {
+  padding: 20px;
+  font-family: 'Inter';
+  width: 50vw;
+  padding-bottom: 100%;
+  outline: solid 1px rgb(222, 222, 222);
+}
+
+.projects-top {
+  padding: 0;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 70vh;
+  column-gap: 1px;
+  overflow-x: auto;
+  position: relative;
+}
+.projects-bottom {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 30vh;
+  column-gap: 1px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.projects-top::-webkit-scrollbar {
+  display: none;
+}
+
+.projects-bottom::-webkit-scrollbar {
+  display: none;
+}
+
