@@ -3,13 +3,13 @@
     src: url("https://cdn.glitch.global/a0135ad0-4092-4324-a09e-d318ebf16060/Soyuz%20Grotesk%20Bold.otf?v=1690543335737");
 }
 
-   @font-face {
+@font-face {
     font-family: "Inter";
     src: url("https://cdn.glitch.global/a0135ad0-4092-4324-a09e-d318ebf16060/Inter.ttf?v=1692122620818");
 }
 
 html {
-background-color: white;
+  background-color: white;
 }
 
 body {
@@ -17,22 +17,22 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-      overflow-y: hidden;
+  overflow-y: hidden;
 }
 
 body .cursor {
-pointer-events: none;
+  pointer-events: none;
 }
 
 body .cursor__ball {
-position: fixed;
-top: 0;
-left: 0;
-z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 body .cursor {
-mix-blend-mode: difference;
+  mix-blend-mode: difference;
 }
 
 @media (max-width: 450px) {
@@ -257,6 +257,7 @@ img {
   position: relative;
   overflow-y: hidden;
 }
+
 .projects-bottom {
   padding: 0;
   width: auto;
@@ -270,6 +271,44 @@ img {
   overflow-x: auto;
   position: relative;
   overflow-y: hidden;
+}
+
+.scroll-container {
+  padding: 0;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 55vh;
+  column-gap: 1px;
+  overflow-x: auto;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.scroll-container-bottom {
+  padding: 0;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 45vh;
+  column-gap: 1px;
+  overflow-x: auto;
+  position: relative;
+  overflow-y: hidden;
+}
+
+#scrollContainer-bottom::-webkit-scrollbar {
+  display: none;
+}
+
+#scrollContainer::-webkit-scrollbar {
+  display: none;
 }
 
 .projects-top::-webkit-scrollbar {
