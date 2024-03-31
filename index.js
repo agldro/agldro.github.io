@@ -131,18 +131,18 @@ function shuffle(array) {
   return array;
 }
 
-//shuffledProjectsDescription = shuffle(projectsDescription);
+shuffledProjectsDescription = shuffle(projectsDescription);
 
-// const scrollContainer = document.getElementById('scrollContainer');
-// const scrollContainerBottom = document.getElementById('scrollContainer-bottom')
-// const projects = [];
-// const projects_bottom = [];
-// let scrollPos = 0;
-// let reverse = 1;
-// let currentProject = 0;
-// let needScroll = true;
-// const scrollSpeed = 8;
-// projects.push(Math.ceil(document.getElementById('portfolio-info').offsetWidth / scrollSpeed))
+const scrollContainer = document.getElementById('scrollContainer');
+const scrollContainerBottom = document.getElementById('scrollContainer-bottom')
+const projects = [];
+const projects_bottom = [];
+let scrollPos = 0;
+let reverse = 1;
+let currentProject = 0;
+let needScroll = true;
+const scrollSpeed = 8;
+projects.push(Math.ceil(document.getElementById('portfolio-info').offsetWidth / scrollSpeed))
 
 
 projectsDescription.forEach(function(item, i, arr) {
