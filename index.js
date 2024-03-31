@@ -185,143 +185,143 @@ projectsDescriptionBottom.forEach(function(item, i, arr) {
   }
 });
 
-projectsDescription.forEach(function(item, i, arr) {
-  projects.push(Math.ceil(document.getElementById(item.id).offsetWidth / scrollSpeed));
-  //console.log(item.id, Math.ceil(document.getElementById(item.id).offsetWidth / scrollSpeed));
-}
-);
+// projectsDescription.forEach(function(item, i, arr) {
+//   projects.push(Math.ceil(document.getElementById(item.id).offsetWidth / scrollSpeed));
+//   //console.log(item.id, Math.ceil(document.getElementById(item.id).offsetWidth / scrollSpeed));
+// }
+// );
 
-projectsDescriptionBottom.forEach(function(item, i, arr) {
-  projects_bottom.push(Math.ceil(document.getElementById(item.id).offsetWidth / scrollSpeed));
-  //console.log(item.id, Math.ceil(document.getElementById(item.id).offsetWidth / scrollSpeed));
-}
-);
+// projectsDescriptionBottom.forEach(function(item, i, arr) {
+//   projects_bottom.push(Math.ceil(document.getElementById(item.id).offsetWidth / scrollSpeed));
+//   //console.log(item.id, Math.ceil(document.getElementById(item.id).offsetWidth / scrollSpeed));
+// }
+// );
 
-let currentProjectBottom = projects_bottom.length;
-let scrollPosBottom = scrollContainerBottom.scrollWidth - scrollContainerBottom.clientWidth;
-//console.log(scrollPosBottom);
+// let currentProjectBottom = projects_bottom.length;
+// let scrollPosBottom = scrollContainerBottom.scrollWidth - scrollContainerBottom.clientWidth;
+// //console.log(scrollPosBottom);
 
-if (needScroll) {
-  scrollContainerBottom.scrollLeft = scrollPosBottom;
-  needScroll = false;
-  //console.log('scrolled')
-}
+// if (needScroll) {
+//   scrollContainerBottom.scrollLeft = scrollPosBottom;
+//   needScroll = false;
+//   //console.log('scrolled')
+// }
 
 //console.log(currentProjectBottom);
 
-function callFunctionMultipleTimes(func, times) {
-  let count = 0;
-  let interval = setInterval(() => {
-        func();
-        count++;
-        if (count === times) {
-            clearInterval(interval);
-        }
-    }, 50);
-}
+// function callFunctionMultipleTimes(func, times) {
+//   let count = 0;
+//   let interval = setInterval(() => {
+//         func();
+//         count++;
+//         if (count === times) {
+//             clearInterval(interval);
+//         }
+//     }, 50);
+// }
 
-function scrollMoment() {
-  if (reverse === 1) {
-    if (scrollPos < scrollContainer.scrollWidth - scrollContainer.clientWidth) {
-      //console.log('plus')
-      scrollPos += scrollSpeed;
-      scrollContainer.scrollLeft = scrollPos;
-    }
-  }
+// function scrollMoment() {
+//   if (reverse === 1) {
+//     if (scrollPos < scrollContainer.scrollWidth - scrollContainer.clientWidth) {
+//       //console.log('plus')
+//       scrollPos += scrollSpeed;
+//       scrollContainer.scrollLeft = scrollPos;
+//     }
+//   }
 
-  if (reverse === -1) {
-    if (scrollPos > 0) {
-      scrollPos -= scrollSpeed;
-      scrollContainer.scrollLeft = scrollPos;
-    }
-  }
-}
+//   if (reverse === -1) {
+//     if (scrollPos > 0) {
+//       scrollPos -= scrollSpeed;
+//       scrollContainer.scrollLeft = scrollPos;
+//     }
+//   }
+// }
 
-function scrollMomentBottom() {
-  if (reverse === -1) {
-    if (scrollPosBottom < scrollContainerBottom.scrollWidth - scrollContainerBottom.clientWidth) {
-      scrollPosBottom += scrollSpeed;
-      scrollContainerBottom.scrollLeft = scrollPosBottom;
-      //console.log('plus');
-    }
-  }
+// function scrollMomentBottom() {
+//   if (reverse === -1) {
+//     if (scrollPosBottom < scrollContainerBottom.scrollWidth - scrollContainerBottom.clientWidth) {
+//       scrollPosBottom += scrollSpeed;
+//       scrollContainerBottom.scrollLeft = scrollPosBottom;
+//       //console.log('plus');
+//     }
+//   }
 
-  if (reverse === 1) {
-    if (scrollPosBottom > 0) {
-      scrollPosBottom -= scrollSpeed;
-      scrollContainerBottom.scrollLeft = scrollPosBottom;
-      //console.log(scrollPosBottom);
-      //console.log('minus');
-    }
-  }
-}
+//   if (reverse === 1) {
+//     if (scrollPosBottom > 0) {
+//       scrollPosBottom -= scrollSpeed;
+//       scrollContainerBottom.scrollLeft = scrollPosBottom;
+//       //console.log(scrollPosBottom);
+//       //console.log('minus');
+//     }
+//   }
+// }
 
-bottomTurn = false;
+// bottomTurn = false;
 
-function scrollDivs() {
-  if (scrollPos >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
-    reverse = -1;
-    currentProject = projects.length;
-    if (scrollPosBottom <= 0) {
-      currentProjectBottom = -1;
-    }
-  }
+// function scrollDivs() {
+//   if (scrollPos >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
+//     reverse = -1;
+//     currentProject = projects.length;
+//     if (scrollPosBottom <= 0) {
+//       currentProjectBottom = -1;
+//     }
+//   }
 
-  if (scrollPos === 0) {
-    reverse = 1;
-    currentProject = -1;
-    if (scrollPosBottom >= scrollContainerBottom.scrollWidth - scrollContainerBottom.clientWidth) {
-      currentProjectBottom = projects_bottom.length;
-    }
-  }
+//   if (scrollPos === 0) {
+//     reverse = 1;
+//     currentProject = -1;
+//     if (scrollPosBottom >= scrollContainerBottom.scrollWidth - scrollContainerBottom.clientWidth) {
+//       currentProjectBottom = projects_bottom.length;
+//     }
+//   }
 
-  if (reverse === 1) {
-    if (bottomTurn) {
-      if (currentProjectBottom > 0) { 
-        currentProjectBottom--;
-      }
-      bottomTurn = false;
-      //console.log('bottom');
-      //console.log(currentProjectBottom);
-      callFunctionMultipleTimes(scrollMomentBottom, projects_bottom[currentProjectBottom]);
-    }
+//   if (reverse === 1) {
+//     if (bottomTurn) {
+//       if (currentProjectBottom > 0) { 
+//         currentProjectBottom--;
+//       }
+//       bottomTurn = false;
+//       //console.log('bottom');
+//       //console.log(currentProjectBottom);
+//       callFunctionMultipleTimes(scrollMomentBottom, projects_bottom[currentProjectBottom]);
+//     }
 
-    else {
-      currentProject++;
-      bottomTurn = true;
-      callFunctionMultipleTimes(scrollMoment, projects[currentProject]);
-    }
-  }
+//     else {
+//       currentProject++;
+//       bottomTurn = true;
+//       callFunctionMultipleTimes(scrollMoment, projects[currentProject]);
+//     }
+//   }
 
-  else {
-    if (bottomTurn) {
-      if (currentProjectBottom < projects_bottom.length) { 
-        currentProjectBottom++;
-      }
-      bottomTurn = false;
-      //console.log('bottom');
-      //console.log(currentProjectBottom);
-      callFunctionMultipleTimes(scrollMomentBottom, projects_bottom[currentProjectBottom]);
-    }
+//   else {
+//     if (bottomTurn) {
+//       if (currentProjectBottom < projects_bottom.length) { 
+//         currentProjectBottom++;
+//       }
+//       bottomTurn = false;
+//       //console.log('bottom');
+//       //console.log(currentProjectBottom);
+//       callFunctionMultipleTimes(scrollMomentBottom, projects_bottom[currentProjectBottom]);
+//     }
 
-    else {
-      currentProject--;
-      bottomTurn = true;
-      callFunctionMultipleTimes(scrollMoment, projects[currentProject]);
-    }
-  }
+//     else {
+//       currentProject--;
+//       bottomTurn = true;
+//       callFunctionMultipleTimes(scrollMoment, projects[currentProject]);
+//     }
+//   }
 
-}
+// }
 
-setInterval(scrollDivs, 8000);
+// setInterval(scrollDivs, 8000);
 
-window.addEventListener('resize', function(event) {
-  projectsDescription.forEach(function(item, i, arr) {
-    projects[i+1] = Math.ceil(document.getElementById(item.id).offsetWidth / scrollSpeed);
-  }
-  );
-  console.log(projects)
-}, true);
+// window.addEventListener('resize', function(event) {
+//   projectsDescription.forEach(function(item, i, arr) {
+//     projects[i+1] = Math.ceil(document.getElementById(item.id).offsetWidth / scrollSpeed);
+//   }
+//   );
+//   console.log(projects)
+// }, true);
 
 const $bigBall = document.querySelector('.cursor__ball--big');
 const $smallBall = document.querySelector('.cursor__ball--small');
