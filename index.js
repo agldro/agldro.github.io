@@ -131,7 +131,7 @@ function shuffle(array) {
   return array;
 }
 
-shuffledProjectsDescription = shuffle(projectsDescription);
+// shuffledProjectsDescription = shuffle(projectsDescription);
 
 const scrollContainer = document.getElementById('scrollContainer');
 const scrollContainerBottom = document.getElementById('scrollContainer-bottom')
