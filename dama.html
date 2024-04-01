@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Aglaya Drobysheva</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="dama.css">
     <link rel="icon" type="image/png" href="favicon.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
@@ -13,6 +13,9 @@
       <a id="back" href="index.html"> back </a> 
   <div class="projects">
     <div class="projects-top">
+
+      <button class="scroll-button left-top-button" onclick="scrollProjects('left', 'top')"><img src="Arrow_left.svg"></button>
+      <button class="scroll-button right-top-button" onclick="scrollProjects('right', 'top')"><img src="Arrow_right.svg"></button>
 
       <div class="item-top" class="textbox">  
         <h1>Digital. Analogue. Manual. Automated.</h1>
@@ -71,6 +74,11 @@
     </div>
 
     <div class="projects-bottom">
+      
+      <button class="scroll-button left-bottom-button" onclick="scrollProjects('left', 'bottom')"><img id="arrow" src="Arrow_left.svg"></button>
+      <button class="scroll-button right-bottom-button" onclick="scrollProjects('right', 'bottom')"><img src="Arrow_right.svg"></button>
+    
+
       <div class="item-bottom" id="b1">  
         <img src="dama_images/7M4A9431.jpeg">
       </div>
@@ -78,7 +86,7 @@
 
       <div class="item-bottom">  
         <p id="description">
-            Digital. Analogue. Manual. Automated. is an exploration of a possible scale between the concepts of 'digital' and 'analogue' in graphic design. The research happens through reproducing Dessin Arithmétique IV by Theo van Doesburg, 1930. 
+            <span class="italics">Digital. Analogue. Manual. Automated.</span> is an exploration of a possible scale between the concepts of 'digital' and 'analogue' in graphic design. The research happens through reproducing Dessin Arithmétique IV by Theo van Doesburg, 1930. 
         </p>
       </div>
 
