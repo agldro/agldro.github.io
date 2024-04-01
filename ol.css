@@ -17,7 +17,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  overflow-y: hidden;
+  width: 100%;
 }
 
 body .cursor {
@@ -41,71 +41,70 @@ mix-blend-mode: difference;
   }
   
   #description {
-    width: 75vw !important;
+    width: 50vw !important;
     font-size: 2.8vmin !important;
   }
-  
+
   #colophon {
-    width: 30vw !important;
+    width: 47vw !important;
     font-size: 2.6vmin !important;
   }
-  
+
   #type, #date {
     font-size: 1.9vmin !important; 
-  
   }
 
   h1 {
-    width: 32vw !important;
+    width: 40vw !important;
   }
 
-#t1{
-  min-width: 47% !important;
-}
-
-#t2{
-  min-width: 85% !important;
-}
-
-#t3{
-  min-width: 87% !important;
-}
-
-#t4{
-  min-width: 65% !important;
-}
-
-#t5{
-  min-width: 60% !important;
-}
-
-#t6{
-  min-width: 80% !important;
-}
-
-#b1{
-  min-width: 100% !important;
-}
-
-#b2{
-  min-width: 70% !important;
-}
-
-#b3{
-  min-width: 80% !important;
-}
-
-#b4{
-  min-width: 90% !important;
-}
-
-.projects-top {
-  height: 50vh !important;
+  #t1{
+    min-width: 90% !important;
   }
   
-  .projects-bottom{
-  height: 50vh !important;
+  #t2{
+    min-width: 55% !important;
   }
+  
+  #t3{
+    min-width: 62%!important;
+  }
+  
+  #t4{
+    min-width: 94% !important;
+  }
+  
+  #t5{
+    min-width: 80% !important;
+  }
+  
+  #t6{
+    min-width: 100% !important;
+  }
+  
+  #t7{
+    min-width: 90% !important;
+  }
+  
+  #b1{
+    min-width: 70% !important;
+  }
+  
+  #b2{
+    min-width: 60% !important;
+  }
+  
+  #b3{
+    min-width: 80% !important;
+  }
+  
+  #b4{
+    min-width: 75% !important;
+  }
+  .scroll-button {
+    visibility: hidden !important;
+  }
+
 }
 
 body .cursor__ball circle {
@@ -113,39 +112,43 @@ fill: white;
 }
 
 #t1{
-  min-width: 22%;
+  min-width: 36%;
 }
 
 #t2{
-  min-width: 35%;
-}
-
-#t3{
-  min-width: 38%;
-}
-
-#t4{
-  min-width: 27%;
-}
-
-#t5{
-  min-width: 20%;
-}
-
-#t6{
-  min-width: 33%;
-}
-
-#b1{
-  min-width: 35%;
-}
-
-#b2{
   min-width: 25%;
 }
 
-#b3{
+#t3{
+  min-width: 20%;
+}
+
+#t4{
+  min-width: 35%;
+}
+
+#t5{
+  min-width: 45%;
+}
+
+#t6{
+  min-width: 40%;
+}
+
+#t7{
+  min-width: 30%;
+}
+
+#b1{
   min-width: 28%;
+}
+
+#b2{
+  min-width: 30%;
+}
+
+#b3{
+  min-width: 25%;
 }
 
 #b4{
@@ -154,16 +157,17 @@ fill: white;
 
 h1{
   font-family: 'Grotesk';
+  width: 15vw;
   font-size: 4vh;
-  line-height: 92%;
+  line-height: 98%;
   margin: 0;
   z-index: 999;
-  width: 15vw;
   color: black;
 }
 
 .wrapper{
   width: auto;
+  height: auto;
   position: relative;
   margin-bottom: 3vh;
   margin-top: 2vh;
@@ -191,7 +195,7 @@ h1{
 #description{
     padding: 0;
     margin:0;
-    width: 25vw;
+    width: 18vw;
     font-family: "Inter";
     position: relative;
     color: black;
@@ -201,7 +205,7 @@ h1{
 #colophon{
   padding: 0;
   margin:0;
-  width: 14vw;
+  width: 20vw;
   font-family: "Inter";
   position: relative;
   color: black;
@@ -226,13 +230,19 @@ h1{
   z-index: 999;
 }
 
-img {
+.item-top img {
+  width: 100%;
+  height: auto;
+}
+
+.item-bottom img {
   width: 100%;
   height: auto;
 }
 
 .item-top {
   padding: 20px;
+  width: auto;
   padding-top: 100%;
   outline: solid 1px rgb(222, 222, 222);
   border-bottom: 1px solid rgb(222, 222, 222);
@@ -240,6 +250,7 @@ img {
 
 .item-bottom {
   padding: 20px;
+  width: auto;
   padding-bottom: 100%;
   outline: solid 1px rgb(222, 222, 222);
 }
@@ -279,3 +290,38 @@ img {
   display: none;
 }
 
+.scroll-button {
+  position: fixed;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 90px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0) ;
+  font-size: 20px;
+  z-index: 999;
+  mix-blend-mode: difference;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.left-top-button {
+  left: 10px;
+  top: 30%;
+}
+
+.right-top-button {
+  right: 10px;
+  top: 30%;
+}
+
+.left-bottom-button {
+  left: 10px;
+  top: 70%;
+}
+
+.right-bottom-button {
+  right: 10px;
+  top: 70%;
+}
