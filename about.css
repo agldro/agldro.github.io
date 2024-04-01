@@ -17,7 +17,6 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-      overflow-y: hidden;
 }
 
 body .cursor {
@@ -116,15 +115,16 @@ p{
 
 .item-top {
   padding: 20px;
+  width: 50vw;
   padding-top: 120%;
   outline: solid 1px rgb(222, 222, 222);
   border-bottom: 1px solid rgb(222, 222, 222);
 }
 
 .item-bottom {
-  padding: 20px;
+  padding: 15px;
   font-family: 'Inter';
-  width: 50vw;
+  width: 15vw;
   padding-bottom: 100%;
   outline: solid 1px rgb(222, 222, 222);
 }
