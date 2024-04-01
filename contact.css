@@ -17,7 +17,6 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 body .cursor {
@@ -58,6 +57,7 @@ mix-blend-mode: difference;
   height: 45vh !important;
   }
 
+
   #top{
     width: 2vw !important;
   }
@@ -69,6 +69,18 @@ mix-blend-mode: difference;
 
 body .cursor__ball circle {
 fill: white;
+}
+
+
+#mail-button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  box-shadow: none;
 }
 
 h1{
@@ -169,21 +181,3 @@ h1{
   display: none;
 }
 
-#mail-button {
-  border: none;
-  background-color: white;
-  font-size: 2.6vmin;
-  margin-top: 1px;
-  margin-bottom: 1px;
-  padding: 0;
-}
-
-#mail-button:hover {
-  border: none;
-  background-color: white;
-  font-size: 2.6vmin;
-  margin-top: 1px;
-  margin-bottom: 1px;
-  padding: 0;
-  cursor: pointer;
-}
