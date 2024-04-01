@@ -1,142 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Aglaya Drobysheva</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="index.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-      <a id="about" href="about.html"> about </a>
-      <a id="contact" href="contact.html"> contact </a> 
-  <div class="projects">
-    <div class="projects-top">
+function sendEmail() {
+  window.location.href = "mailto:agldro@gmail.com";
+}
 
-      <div class="item-top">  
-        <h1>Portfolio <br><br>  Aglaya <br> Drobysheva</h1>
-      </div>
+function scrollProjects(direction, position) {
+  const scrollAmount = 400;
+  const options = {
+    behavior: 'smooth'
+  };
+
+  if (position === 'top') {
+    const projectsTop = document.querySelector('.projects-top');
+    if (direction === 'left') {
+      projectsTop.scrollTo({
+        left: projectsTop.scrollLeft - scrollAmount,
+        ...options
+      });
+    } else if (direction === 'right') {
+      projectsTop.scrollTo({
+        left: projectsTop.scrollLeft + scrollAmount,
+        ...options
+      });
+    }
+  } else if (position === 'bottom') {
+    const projectsBottom = document.querySelector('.projects-bottom');
+    if (direction === 'left') {
+      projectsBottom.scrollTo({
+        left: projectsBottom.scrollLeft - scrollAmount,
+        ...options
+      });
+    } else if (direction === 'right') {
+      projectsBottom.scrollTo({
+        left: projectsBottom.scrollLeft + scrollAmount,
+        ...options
+      });
+    }
+  }
+}
     
-      <button class="scroll-button left-top-button" onclick="scrollProjects('left', 'top')"><img src="Arrow_left.svg"></button>
-      <button class="scroll-button right-top-button" onclick="scrollProjects('right', 'top')"><img src="Arrow_right.svg"></button>
+const $bigBall = document.querySelector('.cursor__ball--big');
+const $smallBall = document.querySelector('.cursor__ball--small');
+const $hoverables = document.querySelectorAll('a');
 
+document.body.addEventListener('mousemove', onMouseMove);
+for (let i = 0; i < $hoverables.length; i++) {
+    $hoverables[i].addEventListener('mouseenter', onMouseHover);
+    $hoverables[i].addEventListener('mouseleave', onMouseHoverOut);
+  }
 
-      <div class="item-top" id="glossary">  
-        <a href="glossary.html"><img src="index_images/7M4A9200.jpeg"></a>
-        <div class="wrapper">
-          <p id="title">The glossary of the untranslatable...</p>
-          <p id="type">Publication</p>
-          <p id="date" width="auto">December 2023</p>
-        </div>
-      </div>
+function onMouseMove(e) {
+  try {
+    TweenMax.to($bigBall, .4, {
+      x: e.clientX - 15,
+      y: e.clientY - 15
+    });
 
-      <div class="item-top" id="magazine">  
-        <a href="magazine.html"><img src="index_images/C88A8370.jpeg"></a>
-        <div class="wrapper">
-          <p id="title">Achromatic</p>
-          <p id="type">Magazine</p>
-          <p id="date" width="auto">May 2023</p>
-        </div>
-      </div>
+    TweenMax.to($smallBall, .1, {
+      x: e.clientX - 5,
+      y: e.clientY - 7
+    });
+  }
 
-      <div class="item-top" id="spatial">  
-        <a href="spatial.html"><video width="100%" height="auto" autoplay loop muted playsinline><source src="index_images/Spacial. Website version.mov" type="video/mp4"></video></a>  
-        <div class="wrapper">
-          <p id="title">Spatial. Issue #1</p>
-          <p id="type">Performance</p>
-          <p id="date" width="auto">May 2023</p>
-        </div>
-      </div>
+  catch {
 
-      <div class="item-top" id="ol">  
-        <a href="ol.html"><img src="index_images/C88A8307.jpeg"></a>
-        <div class="wrapper">
-          <p id="title">Here i am. i am here. am i here.</p>
-          <p id="type">Publication</p>
-          <p id="date" width="auto">December 2022</p>
-        </div>
-      </div>
+  }
+}
 
-      <div class="item-top" id="time">  
-        <a href="time.html"><img src="index_images/C88A5651.jpeg"></a>
-        <div class="wrapper">
-          <p id="title">How the time stopped</p>
-          <p id="type">Publication</p>
-          <p id="date" width="auto">December 2022</p>
-        </div>
-      </div>
+function onMouseHover() {
+  TweenMax.to($bigBall, .3, {
+  scale: 2.7
+  });
+}
 
-      <div class="item-top" id="water">  
-        <a href="water.html"><img src="index_images/IMG_3073.jpeg"></a>
-        <div class="wrapper">
-          <p id="title">My water is not pure...</p>
-          <p id="type">Conversational game</p>
-          <p id="date" width="auto">May 2023</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="projects-bottom">
-
-      <button class="scroll-button left-bottom-button" onclick="scrollProjects('left', 'bottom')"><img id="arrow" src="Arrow_left.svg"></button>
-      <button class="scroll-button right-bottom-button" onclick="scrollProjects('right', 'bottom')"><img src="Arrow_right.svg"></button>
-    
-      <div class="item-bottom" id="mturk">  
-        <a href="mturk.html"><img src="index_images/7M4A9014.jpeg"></a>
-        <div class="wrapper">
-          <p id="title">1, 13, 25, 49, 113, and 585</p>
-          <p id="type">Publication</p>
-          <p id="date" width="auto">December 2023</p>
-        </div>
-      </div>
-
-      <div class="item-bottom" id="dama" >  
-        <a href="dama.html"><img src="index_images/7M4A9509.jpeg"></a> 
-        <div class="wrapper">
-          <p id="title">Digital. Manual. Analogue. Automated.</p>
-          <p id="type">Publication</p>
-          <p id="date" width="auto">December 2023</p>
-        </div>
-      </div>
-
-      <div class="item-bottom" id="ongoing">  
-        <a href="ongoing.html"><video width="100%" height="auto" autoplay loop muted playsinline><source src="index_images/Ongoing. Website version.mp4" type="video/mp4"></video></a> 
-        <div class="wrapper">
-          <p id="title">The Ongoing</p>
-          <p id="type">Video</p>
-          <p id="date" width="auto">May 2023</p>
-        </div>
-      </div>
-
-      <div class="item-bottom" id="coloringbook">  
-        <a href="coloringbook.html"><video width="100%" height="auto" autoplay loop muted playsinline><source src="index_images/Coloring book. Website version.mov" type="video/mp4"></video></a>
-        <div class="wrapper">
-          <p id="title">In my mother tongue there is a word...</p>
-          <p id="type">Publication</p>
-          <p id="date" width="auto">December 2022</p>
-        </div>
-      </div>
-
-      <div class="item-bottom" id="punctuation">  
-        <a href="punctuation.html"><img src="index_images/C88A8582.jpeg"></a>
-        <div class="wrapper">
-          <p id="title">Home. Night. Warmth.</p>
-          <p id="type">Poster</p>
-          <p id="date" width="auto">October 2022</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<div class="cursor">
-    <div class="cursor__ball cursor__ball--big ">
-      <svg height="30" width="30">
-        <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
-      </svg>
-    </div>
-</div>
-</body>
-<script src="index.js"></script>
-</html>
+function onMouseHoverOut() {
+  TweenMax.to($bigBall, .3, {
+  scale: 1
+  });
+}
