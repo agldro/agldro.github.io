@@ -17,7 +17,6 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 body .cursor {
@@ -52,7 +51,6 @@ mix-blend-mode: difference;
 
 #type, #date {
   font-size: 1.9vmin !important; 
-
 }
 
 #t1{
@@ -159,7 +157,7 @@ fill: white;
 
 h1{
   font-family: 'Grotesk';
-  width: 15vw;
+  width: 15vw ;
   font-size: 4vh;
   line-height: 98%;
   margin: 0;
@@ -173,6 +171,10 @@ h1{
   position: relative;
   margin-bottom: 3vh;
   margin-top: 2vh;
+}
+
+.italics {
+  font-style: italic;
 }
 
 #type{
@@ -295,3 +297,35 @@ img {
   display: none;
 }
 
+.scroll-button {
+  position: fixed;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 90px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0) ;
+  font-size: 20px;
+  z-index: 999;
+  mix-blend-mode: difference;
+}
+
+
+.left-top-button {
+  left: 10px;
+  top: 30%;
+}
+
+.right-top-button {
+  right: 10px;
+  top: 30%;
+}
+
+.left-bottom-button {
+  left: 10px;
+  top: 70%;
+}
+
+.right-bottom-button {
+  right: 10px;
+  top: 70%;
+}
