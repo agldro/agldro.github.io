@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Aglaya Drobysheva</title>
-    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="glossary.css">
+    <link rel="icon" type="image/png" href="favicon.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -13,6 +13,9 @@
       <a id="back" href="index.html"> back </a> 
   <div class="projects">
     <div class="projects-top">
+
+      <button class="scroll-button left-top-button" onclick="scrollProjects('left', 'top')"><img src="Arrow_left.svg"></button>
+      <button class="scroll-button right-top-button" onclick="scrollProjects('right', 'top')"><img src="Arrow_right.svg"></button>
 
       <div class="item-top" class="textbox">  
         <h1>The glossary of the <br> untranslatable <br> and its trace</h1>
@@ -61,12 +64,16 @@
     </div>
 
     <div class="projects-bottom">
+
+      <button class="scroll-button left-bottom-button" onclick="scrollProjects('left', 'bottom')"><img id="arrow" src="Arrow_left.svg"></button>
+      <button class="scroll-button right-bottom-button" onclick="scrollProjects('right', 'bottom')"><img src="Arrow_right.svg"></button>
+    
       <div class="item-bottom" id="b1">  
         <img src="glossary_images/CM_insta_scan_02.jpeg">
       </div>
 
       <div class="item-bottom">  
-        <p id="description">The book is a compilation of untranslatable contexts and their signifiers in the Russian language. Connecting holes reveal the influence of each word on all the other ones. These connections represent the historical trauma and harm not only the corresponding word but an entire layer of 'independent,' positive, and nostalgic concepts. The production of these connections leaves its trace as scars on the cover. Although the book first presents itself as a coherent glossary system, it gradually unfolds into a complex maze of relations, dependencies, and pain.</p>
+        <p id="description">The book is a compilation of untranslatable contexts and their signifiers in the Russian language. Connecting holes reveal how each word influences all the other ones. Representing the historical trauma, these connections harm not only the corresponding word but an entire layer of 'independent,' positive, and nostalgic concepts. The production of these connections leaves its trace as scars on the cover. Although the book first presents itself as a coherent glossary system, it gradually unfolds into a complex maze of relations, dependencies, and pain.</p>
       </div>
 
       <div class="item-bottom" id="b3">  
