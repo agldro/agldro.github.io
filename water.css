@@ -12,12 +12,15 @@ html {
 background-color: white;
 }
 
+.italics {
+  font-style: italic;
+}
+
 body {
   background-color: white;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 body .cursor {
@@ -92,6 +95,10 @@ h1{
     
     .projects-bottom{
     height: 50vh !important;
+    }
+
+    .scroll-button {
+      visibility: hidden !important;
     }
 }
 
@@ -255,3 +262,35 @@ img {
   display: none;
 }
 
+.scroll-button {
+  position: fixed;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 90px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0) ;
+  font-size: 20px;
+  z-index: 999;
+  mix-blend-mode: difference;
+}
+
+
+.left-top-button {
+  left: 10px;
+  top: 30%;
+}
+
+.right-top-button {
+  right: 10px;
+  top: 30%;
+}
+
+.left-bottom-button {
+  left: 10px;
+  top: 70%;
+}
+
+.right-bottom-button {
+  right: 10px;
+  top: 70%;
+}
