@@ -132,6 +132,14 @@ h1{
   font-size: 2.6vmin;
 }
 
+#top2{
+  width: 20%;
+}
+
+#bottom2{
+  width: 30%;
+}
+
 #back{
   position: fixed;
   font-family: 'Inter';
