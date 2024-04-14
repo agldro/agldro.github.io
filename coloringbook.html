@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Aglaya Drobysheva</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="coloringbook.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+<body>
+      <a id="back" href="index.html"> back </a> 
+  <div class="projects">
+    <div class="projects-top">
+
+      <button class="scroll-button left-top-button" onclick="scrollProjects('left', 'top')"><img src="Arrow_left.svg"></button>
+      <button class="scroll-button right-top-button" onclick="scrollProjects('right', 'top')"><img src="Arrow_right.svg"></button>
+
+
+      <div class="item-top" class="textbox">  
+        <h1>In my mother tongue there is a word that means pain to many people, however everyone wants it to mean love.</h1>
+        <div class="wrapper">
+            <p id="type">Coloring book</p>
+            <p id="date" width="auto">December 2022</p>
+          </div>
+      </div>
+
+      <div class="item-top" id="t1">  
+        <img src="coloringbook_images/C88A5523.JPG">
+      </div>  
+      
+      <div class="item-top" id="videobox">  
+        <iframe src="https://www.youtube.com/embed/7YGnTTir26M" width="600vw" height="337.2vh" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="item-top" id="t2">  
+        <img src="coloringbook_images/5.jpg">
+      </div>   
+
+      <div class="item-top">  
+        <p id="colophon">
+            Typeface: Courier New<br>
+            Guided by Tereza Ruller<br>
+            <br>
+            ArtEZ<br>
+            2022
+        </p>
+      </div>
+
+    </div>
+    
+
+    <div class="projects-bottom">
+
+      <button class="scroll-button left-bottom-button" onclick="scrollProjects('left', 'bottom')"><img id="arrow" src="Arrow_left.svg"></button>
+      <button class="scroll-button right-bottom-button" onclick="scrollProjects('right', 'bottom')"><img src="Arrow_right.svg"></button>
+    
+
+      <div class="item-bottom" id="b1">  
+        <img src="coloringbook_images/4.jpg">
+      </div>
+
+      <div class="item-bottom" id="b2">  
+        <img src="coloringbook_images/Untitled-1.jpg">
+      </div>     
+
+      <div class="item-bottom">  
+        <p id="description">
+          This coloring book consists of two layers that explore the ambivalence of feelings toward one's country. The first layer to notice shows images of government terror and historical wounds. It portrays everything that leads to the bold, undeniable hate for regimes that lied, repressed, killed, and broke millions of lives. However, the coloring book has another layer of lines on the same page. The second layer shows the symbols of the subtle, still-existing love towards people, nature, literature, art, and childhood memories. This love should become uncovered, detached from the wound, and accepted. The process of coloring reveals this second layer of thinner lines, letting the pain disappear underneath the love. 
+        </p>
+      </div> 
+
+      <div class="item-bottom" id="b3">  
+        <img src="coloringbook_images/3.jpg">
+      </div>   
+      
+      <div class="item-bottom" id="b5">  
+        <img src="coloringbook_images/2.jpg">
+      </div>
+
+      <div class="item-bottom" id="b4">  
+        <img src="coloringbook_images/IMG_5540.JPG">
+      </div>   
+    </div>
+  </div>
+<div class="cursor">
+    <div class="cursor__ball cursor__ball--big ">
+      <svg height="30" width="30">
+        <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+      </svg>
+    </div>
+</div>
+</body>
+<script src="index.js"></script>
+</html>

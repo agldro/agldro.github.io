@@ -1,0 +1,330 @@
+@font-face {
+    font-family: "Grotesk";
+    src: url("https://cdn.glitch.global/a0135ad0-4092-4324-a09e-d318ebf16060/Soyuz%20Grotesk%20Bold.otf?v=1690543335737");
+}
+
+   @font-face {
+    font-family: "Inter";
+    src: url("https://cdn.glitch.global/a0135ad0-4092-4324-a09e-d318ebf16060/Inter.ttf?v=1692122620818");
+}
+
+html {
+background-color: white;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body .cursor {
+pointer-events: none;
+}
+
+body .cursor__ball {
+position: fixed;
+top: 0;
+left: 0;
+z-index: 1000;
+}
+
+body .cursor {
+mix-blend-mode: difference;
+}
+
+@media (max-width: 450px) {
+  .cursor__ball {
+    visibility: hidden;
+  }
+  
+  #about {
+    left: 5vw !important;
+  }
+
+  #contact {
+    left: 10vw !important;
+  }
+
+  #title {
+    font-size: 2.5vmin !important; 
+}
+
+  #type, #date {
+    font-size: 1.9vmin !important; 
+}
+
+.projects-top {
+  height: 50vh !important;
+}
+
+.projects-bottom{
+  height: 50vh !important;
+}
+
+#glossary{
+  min-width: 73% !important;
+}
+
+#magazine{
+  min-width: 95% !important;
+}
+
+#mturk{
+  min-width: 55% !important;
+}
+
+#violence{
+  min-width: 75% !important;
+}
+
+
+#spatial{
+  min-width: 83% !important;
+}
+
+#ol {
+  min-width: 58% !important;
+}
+
+#time {
+  min-width: 46% !important;
+}
+
+#water{
+  min-width: 38% !important;
+}
+
+#dama{
+  min-width: 80% !important;
+}
+
+#ongoing{
+  min-width: 80% !important;
+}
+
+#coloringbook{
+  min-width: 70% !important;
+}
+
+#punctuation{
+  min-width: 90% !important;
+}
+
+.scroll-button {
+  visibility: hidden !important;
+}
+}
+
+body .cursor__ball circle {
+fill: white;
+}
+
+#glossary{
+  min-width: 28%;
+}
+
+#magazine{
+  min-width: 34%;
+}
+
+#mturk{
+  min-width: 18%;
+}
+
+#violence{
+  min-width: 25%;
+}
+
+#spatial{
+  min-width: 32%;
+}
+
+#ol {
+  min-width: 20%;
+}
+
+#time {
+  min-width: 16%;
+}
+
+#water{
+  min-width: 14%;
+}
+
+#dama{
+  min-width: 25%;
+}
+
+#ongoing{
+  min-width: 28%;
+}
+#coloringbook{
+  min-width: 28%;
+}
+
+#punctuation{
+  min-width: 27%;
+}
+
+
+h1{
+  font-family: 'Grotesk';
+  font-size: 4vh;
+  line-height: 92%;
+  position: relative;
+  z-index: 999;
+  color: white;
+  margin: 0;
+  mix-blend-mode: difference;
+}
+
+#title{
+  font-family: "Inter";
+  text-align: left;
+  font-size: 1.6vmin;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+#type{
+  font-family: "Inter";
+  text-align: left;
+  font-size: 1.3vmin;
+  margin: 0;
+  position: absolute;
+  color: grey;
+}
+
+#date{
+  font-family: "Inter";
+  text-align: right;
+  right: 0;
+  margin: 0;
+  font-size: 1.3vmin;
+  position: absolute;
+  color: grey;
+}
+
+#about{
+  position: fixed;
+  font-family: 'Inter';
+  font-size: 2vh;
+  font-weight: 250;
+  text-decoration: none;
+  top: 3vh;
+  left: 2vw;
+  color: white;
+  mix-blend-mode: difference;
+  z-index: 999;
+}
+
+#contact{
+  position: fixed;
+  top: 6vh;
+  left: 4vw;
+  font-family: 'Inter';
+  font-size: 2vh;
+  font-weight: 250;
+  text-decoration: none;
+  color: white;
+  mix-blend-mode: difference;
+  margin-right: 8vw;
+  z-index: 999;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.item-top {
+  padding: 20px;
+  padding-top: 100%;
+  outline: solid 1px rgb(222, 222, 222);
+  border-bottom: 1px solid rgb(222, 222, 222);
+}
+
+.item-bottom {
+  padding: 20px;
+  padding-bottom: 100%;
+  outline: solid 1px rgb(222, 222, 222);
+}
+
+.projects-top {
+  padding: 0;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 55vh;
+  column-gap: 1px;
+  overflow-x: auto;
+  position: relative;
+  overflow-y: hidden;
+}
+.projects-bottom {
+  padding: 0;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 45vh;
+  column-gap: 1px;
+  overflow-x: auto;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.projects-top::-webkit-scrollbar {
+  display: none;
+}
+
+.projects-bottom::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-button {
+  position: fixed;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 90px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0) ;
+  font-size: 20px;
+  z-index: 999;
+  mix-blend-mode: difference;
+}
+
+
+.left-top-button {
+  left: 10px;
+  top: 30%;
+}
+
+.right-top-button {
+  right: 10px;
+  top: 30%;
+}
+
+.left-bottom-button {
+  left: 10px;
+  top: 70%;
+}
+
+.right-bottom-button {
+  right: 10px;
+  top: 70%;
+}
