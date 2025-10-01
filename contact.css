@@ -1,6 +1,9 @@
 @font-face {
-    font-family: "Grotesk";
-    src: url("https://cdn.glitch.global/a0135ad0-4092-4324-a09e-d318ebf16060/Soyuz%20Grotesk%20Bold.otf?v=1690543335737");
+  font-family: "Grotesk";
+  src: url("Labrada-ExtraLightItalic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-kerning: normal;
 }
 
    @font-face {
@@ -84,7 +87,7 @@ fill: white;
 }
 
 
-#mail-button {
+.mail-button {
   background: none;
   border: none;
   height: 20px;
@@ -99,14 +102,14 @@ fill: white;
 
 h1{
   font-family: 'Grotesk';
-  font-size: 4vh;
+  font-size: 4.5vh;
   line-height: 98%;
   margin: 0;
   z-index: 999;
   color: black;
 }
 
-#description{
+.description{
     padding: 0;
     margin:0;
     width: 30vw;
@@ -115,7 +118,7 @@ h1{
     font-size: 2.6vmin;
 }
 
-#inst{
+.inst{
   font-family: "Inter";
   color: black;
   font-size: 2.6vmin;
