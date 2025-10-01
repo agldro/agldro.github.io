@@ -1,6 +1,9 @@
 @font-face {
-    font-family: "Grotesk";
-    src: url("https://cdn.glitch.global/a0135ad0-4092-4324-a09e-d318ebf16060/Soyuz%20Grotesk%20Bold.otf?v=1690543335737");
+  font-family: "Grotesk";
+  src: url("Labrada-ExtraLightItalic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-kerning: normal;
 }
 
    @font-face {
@@ -156,7 +159,7 @@ fill: white;
 
 h1{
   font-family: 'Grotesk';
-  font-size: 4vh;
+  font-size: 4.5vh;
   line-height: 92%;
   margin: 0;
   z-index: 999;
@@ -226,6 +229,10 @@ h1{
 .ontop{
   margin-bottom: -5%;
   z-index: 999;
+}
+
+.italics {
+  font-style: italic;
 }
 
 img {
