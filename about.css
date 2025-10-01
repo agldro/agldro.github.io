@@ -1,6 +1,9 @@
 @font-face {
-    font-family: "Grotesk";
-    src: url("https://cdn.glitch.global/a0135ad0-4092-4324-a09e-d318ebf16060/Soyuz%20Grotesk%20Bold.otf?v=1690543335737");
+  font-family: "Grotesk";
+  src: url("Labrada-ExtraLightItalic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-kerning: normal;
 }
 
    @font-face {
@@ -61,7 +64,7 @@ mix-blend-mode: difference;
     }
 
     #t2{
-      min-width: 75% !important;
+      min-width: 35% !important;
     }
 
     #t3{
@@ -99,25 +102,67 @@ fill: white;
 }
 
 #t2{
-  min-width: 27%;
+  min-width: 25%;
 }
 
 #t3{
-  min-width: 22%;
+  min-width: 20%;
+}
+
+#t4{
+  min-width: 30%;
 }
 
 #b1{
   min-width: 20%;
 }
 
+#b4{
+  min-width: 30%;
+}
+
 h1{
   font-family: 'Grotesk';
-  width: 15vw;
-  font-size: 4vh;
-  line-height: 98%;
-  margin: 0;
+  font-size: 4.5vh;
+  line-height: 92%;
+  position: relative;
   z-index: 999;
+  color: white;
+  margin: 0;
+  mix-blend-mode: difference;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.link{
   color: black;
+}
+
+.wrapper{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.scroll-container{
+  margin-top: 1.5vh;
+  overflow: scroll;
+  height: 45vh;
+}
+
+.scroll-container-smaller{
+  margin-top: 1.5vh;
+  overflow: scroll;
+  height: 25vh;
+}
+
+#type{
+  margin-top: -1.5vh;
+  font-family: "Inter";
+  font-size: 1.3vmin;
+  color: grey;
 }
 
 #colophon{
@@ -134,7 +179,8 @@ p{
   font-family: 'Inter';
   font-size: 2vh;
   font-weight: 250;
-  min-width: 20vw;
+  min-width: 10vw;
+  padding-bottom: 0;
 }
 
 img {
