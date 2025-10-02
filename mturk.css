@@ -1,6 +1,9 @@
 @font-face {
-    font-family: "Grotesk";
-    src: url("https://cdn.glitch.global/a0135ad0-4092-4324-a09e-d318ebf16060/Soyuz%20Grotesk%20Bold.otf?v=1690543335737");
+  font-family: "Grotesk";
+  src: url("Labrada-ExtraLightItalic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-kerning: normal;
 }
 
    @font-face {
@@ -59,7 +62,7 @@ mix-blend-mode: difference;
   }
 
   h1 {
-    width: 50vw !important;
+    width: 40vw !important;
   }
 
   #t1{
@@ -141,19 +144,19 @@ fill: white;
 }
 
 #b1{
-  min-width: 22%;
+  min-width: 24%;
 }
 
 #b2{
-  min-width: 25%;
-}
-
-#b3{
   min-width: 27%;
 }
 
+/* #b3{
+  min-width: 18%;
+} */
+
 #b4{
-  min-width: 25%;
+  min-width: 20%;
 }
 
 #b5{
@@ -163,7 +166,7 @@ fill: white;
 h1{
   font-family: 'Grotesk';
   width: 15vw;
-  font-size: 4vh;
+  font-size: 4.5vh;
   line-height: 98%;
   margin: 0;
   z-index: 999;
