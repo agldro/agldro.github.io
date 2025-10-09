@@ -67,15 +67,15 @@ mix-blend-mode: difference;
 }
 
 #MRP {
-  min-width: 83% !important;
+  min-width: 80% !important;
 }
 
 #PD {
-  min-width: 70% !important;
+  min-width: 75% !important;
 }
 
 #installation {
-  min-width: 73% !important;
+  min-width: 60% !important;
 }
 
 #madonna {
@@ -83,7 +83,7 @@ mix-blend-mode: difference;
 }
 
 #glossary{
-  min-width: 73% !important;
+  min-width: 80% !important;
 }
 
 #magazine{
@@ -115,7 +115,7 @@ mix-blend-mode: difference;
 }
 
 #water{
-  min-width: 38% !important;
+  min-width: 43% !important;
 }
 
 #dama{
