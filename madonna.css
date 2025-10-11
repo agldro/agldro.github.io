@@ -48,7 +48,7 @@ mix-blend-mode: difference;
   }
 
   #colophon {
-    width: 30vw !important;
+    width: 42vw !important;
     font-size: 2.6vmin !important;
   }
 
@@ -65,19 +65,19 @@ mix-blend-mode: difference;
 }
 
 #t2{
-  min-width: 80% !important;
-}
-
-#t3{
-  min-width: 75% !important;
-}
-
-#t4{
   min-width: 90% !important;
 }
 
+#t3{
+  min-width: 85% !important;
+}
+
+#t4{
+  min-width: 92% !important;
+}
+
 #t5{
-  min-width: 80% !important;
+  min-width: 85% !important;
 }
 
 #t6{
@@ -88,16 +88,16 @@ mix-blend-mode: difference;
   min-width: 80% !important;
 }
 
-#b3{
-  min-width: 80% !important;
-}
-
 #b4{
-  min-width: 90% !important;
+  min-width: 85% !important;
 }
 
 #b5{
-  min-width: 72% !important;
+  min-width: 90% !important;
+}
+
+#b6{
+  min-width: 80% !important;
 }
 
 .projects-top {
