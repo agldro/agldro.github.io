@@ -42,8 +42,8 @@ mix-blend-mode: difference;
     visibility: hidden;
   }
   
-  #description {
-    width: 60vw !important;
+  .description {
+    width: 70vw !important;
     font-size: 3.5vmin !important;
   }
 
@@ -64,20 +64,27 @@ mix-blend-mode: difference;
   height: 45vh !important;
   }
 
-
   #top{
-    width: 2vw !important;
+    width: 90vw !important;
   }
 
-  #bottom {
+  #top2{
     display: none !important;
   }
 
-  #mail-button {
+   #bottom{
+    width: 20% !important;
+  }
+
+     #bottom2{
+    width: 50vw !important;
+  }
+
+ .inst {
     font-size: 3.5vmin !important;
   }
 
-  #inst{
+  .mail-button {
     font-size: 3.5vmin !important;
   }
 }
@@ -125,7 +132,7 @@ h1{
   text-decoration: none;
 }
 
-.colophon{
+#colophon{
   padding: 0;
   margin:0;
   min-width: 40vw;
@@ -139,9 +146,9 @@ h1{
   width: 20%;
 }
 
-#bottom2{
+/* #bottom2{
   width: 30%;
-}
+} */
 
 #back{
   position: fixed;
