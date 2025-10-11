@@ -46,6 +46,14 @@ mix-blend-mode: difference;
     width: 40vw !important;
   }
 
+  #type, #date {
+    font-size: 1.9vmin !important; 
+  }
+
+  p{
+     font-size: 3.1vmin !important;
+  }
+
   #colophon{
     font-size: 3.1vmin !important;
     width: 50vw !important;
@@ -63,14 +71,6 @@ mix-blend-mode: difference;
     height: 40vh !important;
     }
 
-    #t2{
-      min-width: 35% !important;
-    }
-
-    #t3{
-      display: none !important;
-    }
-
     #top{
       width: 20vw;
     }
@@ -79,8 +79,21 @@ mix-blend-mode: difference;
       min-width: 57% !important;
     }
 
+    #t2{
+      min-width: 78% !important;
+    }
+
+    #t3{
+      min-width: 60% !important;
+    }
+
+    #t4{
+      min-width: 55% !important;
+    }
+
+
     #b1{
-      min-width: 10% !important;
+      min-width: 5% !important;
     }
 
     #b2 {
@@ -88,7 +101,11 @@ mix-blend-mode: difference;
     }
 
     #b3 {
-      min-width: 50% !important;
+      min-width: 30% !important;
+    }
+
+    #b4 {
+      min-width: 40% !important;
     }
     
 }
